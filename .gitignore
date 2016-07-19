@@ -1,0 +1,8 @@
+.env/*
+*.pyc
+__design/*
+node_modules/*
+.idea/
+*.sublime-project
+*.sublime-workspace
+export/*
