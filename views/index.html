@@ -36,6 +36,8 @@
   <link href="/stylesheets/font-awesome.min.css" type="text/css" rel="stylesheet" />
   <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" />
   <link href="/stylesheets/template_styles.css" type="text/css" rel="stylesheet" />
+  <link href="/stylesheets/override.css" type="text/css" rel="stylesheet" />
+  <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -61,7 +63,7 @@
           </ul>
           <!-- /.social -->
           <!-- ============================================================= LOGO MOBILE ============================================================= -->
-          <a class="navbar-brand" href="/"><img src="/bitrix/templates/eshop_adapt_blue/assets/images/logo.svg" class="logo" alt=""></a>
+          <a class="navbar-brand" href="/"><img width="140" src="/images/logo_bitrix24.png" class="logo" alt=""></a>
           <!-- ============================================================= LOGO MOBILE : END ============================================================= -->
           <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a>
         </div>
@@ -72,45 +74,24 @@
         <div class="navbar-collapse collapse">
           <div class="container">
             <!-- ============================================================= LOGO ============================================================= -->
-            <a class="navbar-brand" href="/"><img src="/bitrix/templates/eshop_adapt_blue/assets/images/logo.svg" class="logo" alt="RuMaster"></a>
+            <a class="navbar-brand" href="/"><img src="/images/logo_bitrix24.png" class="logo" alt="RuMaster"></a>
             <!-- ============================================================= LOGO : END ============================================================= -->
             <!-- ============================================================= MAIN NAVIGATION ============================================================= -->
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav js-nav">
               <li class="dropdown">
-                <a href="/about/" class=" dropdown-toggle js-activated">О нас</a>
-                <ul class="dropdown-menu">
-                  <li><a href="/about/">Об агентстве</a></li>
-                  <li><a href="/about/vacancy_rumaster/">Работа у нас</a></li>
-                  <li><a href="/about/togliatti_rumaster/">Тольятти</a></li>
-                </ul>
+                <a href="#about">О Битрикс24</a>
               </li>
               <li class="dropdown">
-                <a href="/portfolio/" class="no_open dropdown-toggle js-activated">Работы</a>
+                <a href="#price">Цены</a>
               </li>
               <li class="dropdown">
-                <a href="/services/" class=" dropdown-toggle js-activated">Услуги</a>
-                <ul class="dropdown-menu">
-                  <li><a href="/services/development-1c-bitrix/">Разработка сайтов на 1С-Битрикс</a></li>
-                  <li><a href="/services/support-sites/">Поддержка и сопровождение сайтов</a></li>
-                  <li><a href="/services/marketing-support/">Маркетинговое сопровождение</a></li>
-                  <li><a href="/services/technology/">Инновация и технологии</a></li>
-                  <li><a href="/services/bitrix24/">Корпоративные порталы и CRM</a></li>
-                </ul>
+                <a href="#services">Услуги</a>
               </li>
               <li class="dropdown">
-                <a href="/services/bitrix24/" class="no_open dropdown-toggle js-activated">Битрикс24</a>
+                <a href="#feeds">Портфолио</a>
               </li>
               <li class="dropdown">
-                <a href="/contacts/" class="no_open dropdown-toggle js-activated">Контакты</a>
-              </li>
-              <li class="dropdown pull-right searchbox">
-                <a href="#" class="dropdown-toggle js-activated"><i class="icon-search"></i></a>
-                <div class="dropdown-menu">
-                  <form id="search" class="navbar-form search" role="search">
-                    <input type="search" class="form-control" placeholder="Type to search">
-                    <button type="submit" class="btn btn-default btn-submit icon-right-open"></button>
-                  </form>
-                </div>
+                <a href="#contacts">Контакты</a>
               </li>
             </ul>
             <!-- ============================================================= MAIN NAVIGATION : END ============================================================= -->
@@ -131,9 +112,8 @@
         <div class="row" style="padding-bottom:0">
           <div class="col-md-10 col-sm-9 center-block text-center" style="padding-bottom:0">
             <header style=" width: 80%; margin: 0 auto;">
-              <h1>Внедрение корпоративного портала Битрикс24</h1>
-              <p>Все инструменты для работы компании в одном продукте «Битрикс24: Корпоративный портал» — автоматизация бизнес-процессов, контроль задач и времени сотрудников, история взаимоотношений с клиентами, эффективность отдела продаж, CRM, работа проектного офиса, эффективные внутренние коммуникации.</p>
-            </header>
+              <h1>Продажа и внедрение порталов Битрикс24</h1>
+              <p>Все инструменты для работы компании в одном продукте «Битрикс24» — CRM и эффективность отдела продаж, управление задачами и работа проектного офиса, автоматизация бизнес-процессов и контроль времени сотрудников, совместная работа с документами и эффективные внутренние коммуникации, а так же многое другое.</p> </header>
             <img src="/images/bitrix24_bg.png" style="width:100%">
           </div>
           <!-- /.col -->
@@ -144,14 +124,13 @@
     </section>
     <!-- ============================================================= SECTION – HERO : END ============================================================= -->
     <!-- ============================================================= SECTION – WORK SAMPLES ============================================================= -->
-    <section id="work-samples" class="dark-bg">
+    <section id="about" class="dark-bg">
       <div class="container inner" style="padding-bottom:80px">
         <div class="row">
           <div class="col-md-8 col-sm-9 center-block text-center">
             <header>
-              <h1>12 инструментов для отрыва от конкурентов</h1>
-              <p>Повышаем эффективность работы компании, внедряя «Битрикс24: Корпоративный портал»!</p>
-              <p>Корпоративный портал устанавливается на индивидуальный сервер, размещенный внутри компании или у хостинг-провайдера. Кроме широкого базового функционала, продукт поддерживает индивидуальные настройки бизнес-логики корпоративного портала, возможность доработки интерфейса, интеграцию с «1С:ЗУП» и многое другое.</p>
+              <h1>12 Инструментов эффективного управления компанией</h1>
+              <p>Преимущества работы в Битрикс24 за 2 минуты</p>
             </header>
           </div>
           <!-- /.col -->
@@ -160,8 +139,7 @@
         <div class="row">
           <div class="col-sm-12 center-block inner-top-sm">
             <div class="video-container">
-              <iframe src="https://player.vimeo.com/video/158536927" width="1170" height="658" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <p><a href="https://vimeo.com/128079322">Битрикс24: Корпоративный портал</a> from <a href="https://vimeo.com/rumaster">RuMaster</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+              <iframe src="https://www.youtube.com/embed/r_HqZZlLI-g" width="1170" height="658" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
           </div>
           <!-- /.col -->
@@ -171,12 +149,12 @@
       <!-- /.container -->
     </section>
     <!-- ============================================================= SECTION – WORK SAMPLES : END ============================================================= -->
-    <section id="blog">
+    <section id="price">
       <div class="container" style="padding:80px 0 0 0">
         <div class="row">
           <div class="col-md-8 col-sm-9 center-block text-center" style="padding-bottom:20px">
             <header>
-              <h1>Этапы внедрения Битрикс24</h1>
+              <h1>Выбор лицензии Битрикс24</h1>
             </header>
           </div>
           <!-- /.col -->
@@ -184,36 +162,49 @@
         <!-- ./row -->
       </div>
     </section>
-    <!-- ============================================================= SECTION – PRODUCT ============================================================= -->
-    <section id="product">
-      <div class="container inner" style="padding-top: 20px;">
+  <section>
+    <div class="container inner" style="padding-top: 20px;">
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-6 inner-left-xs">
+          <figure><img src="/images/lic.jpg" alt=""></figure>
+        </div>
+        <!-- /.col -->
+        <div class="col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
+<!--           <h2>Выбор лицензии Битрикс24</h2> -->
+          <p>Подберем оптимальный для вас вариант «облака» или «коробки». Установим и произведем первичную настройку. Определим основные сценарии использования <br />инструментов и модулей.</p> <a  data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
+        </div>
+        <!-- /.col -->
+      </div>
+    </div>
+  </section>
+
+    <section id="services">
+      <div class="container" style="padding:80px 0 0 0">
         <div class="row">
-          <div class="col-sm-6 col-sm-push-6 inner-left-xs">
-            <figure><img src="/images/lic.jpg" alt=""></figure>
-          </div>
-          <!-- /.col -->
-          <div class="col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
-            <h2>Лицензия Битрикс24</h2>
-            <p>Подберем оптимальный для вас вариант «облака» или «коробки».
-              <br> Установим и произведем первичную настройку.
-              <br> Определим основные сценарии использования инструментов и модулей.</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+          <div class="col-md-8 col-sm-9 center-block text-center" style="padding-bottom:20px">
+            <header>
+              <h1>Услуги</h1>
+            </header>
           </div>
           <!-- /.col -->
         </div>
-        <!-- /.row -->
-        <div class="row inner-top-md">
+        <!-- ./row -->
+      </div>
+    </section>
+
+
+    <!-- ============================================================= SECTION – PRODUCT ============================================================= -->
+    <section id="product">
+      <div class="container inner" style="padding-top: 20px;">
+        
+        <div class="row inner-top-xs">
           <div class="col-sm-6 inner-right-xs text-right">
             <figure><img src="/images/crm.png" alt=""></figure>
           </div>
           <!-- /.col -->
           <div class="col-sm-6 inner-top-xs inner-left-xs">
             <h2>Внедрение CRM</h2>
-            <p>Увеличьте продажи на 30-50%.
-              <br> Контролируйте эффективность менеджеров по продажам.
-              <br> Начните вести финансовое планирование.
-              <br> Повысьте лояльность клиентов в 2 раза.</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+            <p>Увеличьте продажи на 30-50%. <br />Контролируйте эффективность менеджеров и смежных подразделений. <br />Внедрите финансовое планирование и прогнозирование сделок. <br />Повысьте лояльность клиентов в 2 раза.</p> <a data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
           </div>
           <!-- /.col -->
         </div>
@@ -230,7 +221,7 @@
               <br> Получайте 100%-й контроль за деятельностью организации.
               <br> Оценивайте эффективность менеджеров, прогнозируйте доход.
               <br> Выявляйте критичные точки и мгновенно корректируйте работу.</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+            <a data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
           </div>
           <!-- /.col -->
         </div>
@@ -246,7 +237,7 @@
               <br> Получайте выполнение всех ваших распоряжений.
               <br> Экономьте до 40% рабочего времени на ежедневных делах.
               <br> Избавьтесь от бесполезных сотрудников.</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+            <a data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
           </div>
           <!-- /.col -->
         </div>
@@ -259,9 +250,9 @@
           <div class="col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
             <h2>Настройка бизнес-процессов</h2>
             <p>Автоматизируйте работу всей организации.
-              <br> Избавьтесь от 2 кг макулатуры на рабочем столе.
+              <br> Избавьтесь от всех рутин.
               <br> Заставьте работать компанию как «часовой механизм».</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+            <a data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
           </div>
           <!-- /.col -->
         </div>
@@ -277,7 +268,7 @@
               <br> Интеграция с интернет-магазином.
               <br> Интеграция с Google Docs, Office 356 и Microsoft Office Online.
               <br> Интеграция с One Drive, Google Drive и Dropbox.</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+            <a data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
           </div>
           <!-- /.col -->
         </div>
@@ -292,21 +283,19 @@
             <p>Контролируйте телефонные переговоры сотрудников.
               <br> Звоните и принимайте звонки через Битрикс24.
               <br> Экономьте на оборудовании и монтаже.</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+            <a data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
           </div>
           <!-- /.col -->
         </div>
         <!-- /.row -->
         <div class="row inner-top-md">
           <div class="col-sm-6 inner-right-xs text-right">
-            <figure><img src="/images/api.jpg" alt=""></figure>
+            <figure><img src="/images/3fa1665a64ff4d6212e046181b569ed1.png" alt=""></figure>
           </div>
           <!-- /.col -->
           <div class="col-sm-6 inner-top-xs inner-left-xs">
-            <h2>Кастомизация, доработки</h2>
-            <p>Добавьте недостающий функционал в корппортал.
-              <br> Улучшайте и развивайте процессы в компании.</p>
-            <a href="/contacts/" class="txt-btn">Заказать</a>
+            <h2>Приложения, Кастомизация и Доработки.</h2>
+            <p>Недостает функционала? Купите приложение на Маркете, или мы доработаем корпоративный портал для вас. Улучшайте и развивайте процессы в компании!.</p> <a data-toggle="modal" data-target="#formModal" href="#" class="txt-btn">Заказать</a>
           </div>
           <!-- /.col -->
         </div>
@@ -315,13 +304,12 @@
       <!-- /.container -->
     </section>
     <!-- ============================================================= SECTION – PRODUCT : END ============================================================= -->
-    <section id="two-big-tabs" class="light-bg">
+    <section id="feeds" class="light-bg">
       <div class="container inner-top">
         <div class="row">
           <div class="col-md-8 col-sm-9 center-block text-center">
             <header>
-              <h1>Наши комплексные внедрения Битрикс24</h1>
-              <p>.</p>
+              <h1>Портфолио</h1>
             </header>
           </div>
           <!-- /.col -->
@@ -329,69 +317,7 @@
         <!-- /.row -->
         <div class="row inner-top-sm">
           <div class="col-xs-12">
-            <div class="tabs tabs-2-big-top tab-container">
-              <ul class="etabs text-center">
-                <li class="tab">
-                  <a href="#tab-1">
-                    <h3>Бизнес-Гарант</h3>
-                    <p class="text-small"> №1 в Самарской области в сфере юридических, бухгалтерских, риэлторских услуг и покупке-продаже бизнеса. Автоматизация работы 13 офисов в Самаре и Тольятти. Настройка уникальной логики работы сотрудников по 12 различным направлениям бизнеса. Внедрение IP-телефонии.</p>
-                  </a>
-                  <!-- /#tab-1 -->
-                </li>
-                <!-- /.tabs -->
-                <li class="tab">
-                  <a href="#tab-2">
-                    <h3>Тольяттихимбанк</h3>
-                    <p class="text-small">Крупнейший коммерческий банк с более чем 1000 филиалами в Самарской области. Перенос данных о 15 тыс. физичеких и юридических лиц — клиентов банка в CRM. Регламентирование работы с CRM. Настройка индивидуальных отчетов CRM и аналитики по услугам. Обучение руководителей отделов.</p>
-                  </a>
-                  <!-- /#tab-2 -->
-                </li>
-                <!-- /.tabs -->
-                <li class="tab">
-                  <a href="#tab-3">
-                    <h3>ТГУ</h3>
-                    <p class="text-small">Запуск направления дистанционного образования через Битрикс24 для Тольяттинского государственного универсистета. Настройка лидогенерации абитуриентов и обмена данными с личным кабинетом. Настройка модуля тестирования и экзаменов. Кастомизация CRM.</p>
-                  </a>
-                  <!-- /#tab-2 -->
-                </li>
-                <!-- /.tabs -->
-              </ul>
-              <!-- /.etabs -->
-              <div class="panel-container screen-container">
-                <div class="tab-content" id="tab-1">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <figure><img src="/images/bg.jpg" alt=""></figure>
-                    </div>
-                    <!-- /.col -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.tab-content -->
-                <div class="tab-content" id="tab-2">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <figure><img src="/images/thb.jpg" alt=""></figure>
-                    </div>
-                    <!-- /.col -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.tab-content -->
-                <div class="tab-content" id="tab-3">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <figure><img src="/images/tgu.jpg" alt=""></figure>
-                    </div>
-                    <!-- /.col -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.tab-content -->
-              </div>
-              <!-- /.panel-container -->
-            </div>
-            <!-- /.tabs -->
+
           </div>
           <!-- /.col -->
         </div>
@@ -400,121 +326,39 @@
       <!-- /.container -->
     </section>
     <!-- ============================================================= SECTION – GET IN TOUCH ============================================================= -->
-    <section class="dark-bg img-bg-soft img-bg" style="background-image: url(/images/about_bg4.jpg);">
-      <div class="container inner">
-        <div class="row">
-          <div class="col-md-8 col-sm-9 center-block text-center" style="opacity:1 !important;">
-            <header>
-              <h1>Все наши знания и опыт для решения ваших самых сложных задач</h1>
-            </header>
-            <a href="/contacts/" class="btn btn-big btn-white">Связаться с нами</a>
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
+    <section id="contacts" class="yamap">
+      <div id="yamap" class="yamap__inner"></div>
     </section>
     <!-- ============================================================= SECTION – GET IN TOUCH : END ============================================================= -->
   </main>
-  <!-- ============================================================= MAIN : END ============================================================= -->
-  <!-- ============================================================= FOOTER ============================================================= -->
-  <footer class="dark-bg">
-    <div itemscope itemtype="http://schema.org/Organization">
-      <div class="container inner">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 inner">
-            <h4>Интернет-агентство</h4>
-            <a href="/"><img src="/images/logo-white.svg" class="logo img-intext" alt=""></a>
-            <p>Мы всегда в поиске талантливых людей. Присоединяйтесь!</p>
-            <a href="/about/vacancy_rumaster/#vacancy" class="txt-btn">Наши вакансии</a>
-          </div>
-          <!-- /.col -->
-          <div class="col-md-3 col-sm-6 inner">
-            <h4>Последние работы</h4>
-            <div class="row thumbs gap-xs">
-              <div class="col-xs-6 thumb">
-                <figure class="icon-overlay icn-link">
-                  <a href="/portfolio/justcoffee/"><img src="/images/work01.jpg" alt=""></a>
-                </figure>
-              </div>
-              <!-- /.thumb -->
-              <div class="col-xs-6 thumb">
-                <figure class="icon-overlay icn-link">
-                  <a href="/portfolio/bosco/"><img src="/images/work05.jpg" alt=""></a>
-                </figure>
-              </div>
-              <!-- /.thumb -->
-              <div class="col-xs-6 thumb">
-                <figure class="icon-overlay icn-link">
-                  <a href="/portfolio/zemlya-narodu/"><img src="/images/work06.jpg" alt=""></a>
-                </figure>
-              </div>
-              <!-- /.thumb -->
-              <div class="col-xs-6 thumb">
-                <figure class="icon-overlay icn-link">
-                  <a href="/portfolio/tomet/"><img src="/images/work08.jpg" alt=""></a>
-                </figure>
-              </div>
-              <!-- /.thumb -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.col -->
-          <span itemprop="name" style="display:none;">RuMaster</span>
-          <div class="col-md-3 col-sm-6 inner" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <h4>Контакты</h4>
-            <p></p>
-            <ul class="contacts">
-              <li><i class="icon-location contact"></i> <span itemprop="addressLocality">Тольятти</span>, <span itemprop="streetAddress">ул. Юбилейная, 1а</span> <span itemprop="postalCode" style="display:none;"> 445036</span></li>
-              <li><i class="icon-mobile contact"></i> <span itemprop="telephone">+7 8482 55-55-50</span></li>
-              <li><a href="mailto:info@ru-master.ru"><i class="icon-mail-1 contact"></i> <span itemprop="email">info@ru-master.ru</span></a></li>
-              <li style="padding-top:30px">
-                <a href="http://www.1c-bitrix.ru/composite/" target="_blank"><img src="/images/f_logo.png" alt=""></a>
-              </li>
-            </ul>
-            <!-- /.contacts -->
-          </div>
-          <!-- /.col -->
-          <div class="col-md-3 col-sm-6 inner">
-            <h4>Будьте в курсе</h4>
-            <p>Хотите получать специальные предложения от нас, а также анонсы обучающих мероприятий: семинаров и мастер-классов, которые мы проводим? Подпишитесь на нашу информационную рассылку:</p>
-            <div id="asd_subscribe_res" style="display: none;"></div>
-            <form id="asd_subscribe_form" class="form-inline newsletter" role="form" action="/services/bitrix24/" method="post">
-              <input type="hidden" name="sessid" id="sessid" value="45a411de1397cd8010de456501442f4e" />
-              <input type="hidden" name="asd_subscribe" value="Y" />
-              <input type="hidden" name="charset" value="UTF-8" />
-              <input type="hidden" name="site_id" value="s1" />
-              <input type="hidden" name="asd_rubrics" value="1" />
-              <input type="hidden" name="asd_show_rubrics" value="N" />
-              <input type="hidden" name="asd_not_confirm" value="Y" />
-              <input type="hidden" name="asd_key" value="ebcdfe8db1f7dcdb3d13d1e6c18d826c" />
-              <label class="sr-only" for="exampleInputEmail">Ваш Email</label>
-              <input id="exampleInputEmail" class="form-control" type="email" name="asd_email" value="" placeholder="E-mail" />
-              <input type="submit" class="btn btn-default btn-submit" name="asd_submit" id="asd_subscribe_submit" value="Подписаться" />
+
+  <!-- Modal -->
+  <div class="modal modal--bitrix fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="form-front">
+            
+            <h3 >Интересует наш опыт?</h3>
+            <p>Запросите портфолио по интересующей вас отрасли</p>
+            <form action="/" method="GET" class="form js-form">
+              <div class="form-group"><input required placeholder="Телефон*" type="tel" name="phone" class="form-control"/></div>
+              <button type="submit" class="btn btn-default" >Отправить</button>
             </form>
           </div>
-          <!-- /.col -->
+          <div class="form-back">
+            <h3>Спасибо</h3>
+            <p>Ваше сообщение успешно отправлено. наш менеджер свяжется с вами в ближайшее время.</p>
+            <button type="submit" class="btn btn-default" data-dismiss="modal" >Закрыть</button>
+          </div>
         </div>
-        <!-- /.row -->
       </div>
-      <!-- .container -->
     </div>
-    <div class="footer-bottom">
-      <div class="container inner">
-        <p class="pull-left">© 2005-2016 Интернет-агентство RuMaster</p>
-        <ul class="footer-menu pull-right">
-          <li><a href="/about/">О нас</a></li>
-          <li><a href="/portfolio/">Работы</a></li>
-          <li><a href="/services/">Услуги</a></li>
-          <li><a href="/contacts/">Контакты</a></li>
-        </ul>
-        <!-- .footer-menu -->
-      </div>
-      <!-- .container -->
-    </div>
-    <!-- .footer-bottom -->
-  </footer>
+  </div>
+  <!-- ============================================================= MAIN : END ============================================================= -->
+  <!-- ============================================================= FOOTER ============================================================= -->
+
   <!-- ============================================================= FOOTER : END ============================================================= -->
   <script src="/javascripts/html5shiv.js"></script>
   <script src="/javascripts/respond.min.js"></script>
@@ -536,6 +380,8 @@
   <script src="/javascripts/switchstylesheet.js"></script>
   <script src="/javascripts/onscroll.js"></script>
   <script src="/javascripts/webform.js"></script>
+  <script src="/javascripts/jquery.maskedinput.min.js"></script>
+  <script src="/javascripts/general.js"></script>
   <script src="https://www.google.com/recaptcha/api.js?hl=ru"></script>
   <script type="text/javascript">
   (window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=Mf/xmGLr9kihxmrZVYR7bGQ6W7qNoazVoMdz1cVsemUUMVNdWc5awgefdZG3VyNkf4TR0/G6AjfzyQ/ZOai9vrCgDuoSZZUc2RhparLxu5ZGDckqarVaAh0m/ABxnEFVP81pqoCWmvksDCgfNlQfgMsCUpDHTPVmxL46yU3DPa4-';

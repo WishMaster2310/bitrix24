@@ -1,0 +1,60 @@
+.navbar-brand img {
+	max-height: 76px;
+}
+
+#contacts {
+}
+
+.yamap {
+	height: 450px;
+	position: relative;
+}
+
+.yamap__inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal--bitrix .modal-dialog{
+	max-width: 420px;
+}
+
+.modal--bitrix .modal-content{
+	background-color: #3aa1c6;
+}
+
+.modal--bitrix .modal-body{
+	padding: 20px 25px;
+	color: #fff;
+}
+
+.modal--bitrix .close {
+	font-size: 32px;
+	margin-top: -10px;
+	margin-right: -10px;
+	color: #fff;
+	opacity: .7;
+}
+
+.modal--bitrix  h3 {
+	color: #fff;
+	font-size: 24px;
+}
+
+.modal--bitrix .form-control {
+	margin-bottom: 0;
+	border-color: #2688ab
+}
+
+.modal--bitrix .form-group {
+	margin-bottom: 10px;
+}
+
+.modal--bitrix .form-back {
+	display: none;
+	
+}
+
