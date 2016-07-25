@@ -4,13 +4,13 @@ function initYaMap () {
 	{
 	    mmap= new ymaps.Map('yamap',
 	    {
-	        center: [56.845132,60.589762],
+	        center: [56.844886,60.591168],
 	        controls: ['zoomControl', 'fullscreenControl'],
 	        zoom: 16
 	    });
 
 	    myPlacemark = new ymaps.Placemark([56.845132,60.589762], {
-            hintContent: 'г. Екатеринбург ул Бориса Ельцина 3, 3 этаж. БЦ Ельцин Центр.'
+            hintContent: 'г. Екатеринбург ул Бориса Ельцина 5, 3 этаж. БЦ Ельцин Центр.'
         }, {
         	preset: 'islands#redIcon'
         });
