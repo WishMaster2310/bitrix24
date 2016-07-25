@@ -1,0 +1,8 @@
+a.no_open {
+    background: none !important;
+    border: none !important;
+}
+
+a.no_open:hover {
+    color: #B5386B !important;
+}
