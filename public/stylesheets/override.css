@@ -131,6 +131,7 @@
 }
 .b-feedGallery {
 	margin-bottom: 40px;
+    margin-top: 40px;
 }
 .b-feedGallery__item-col_right {
     border: 3px solid #fff;

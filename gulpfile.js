@@ -23,7 +23,7 @@ gulp.task('less:dev', function() {
     });
 
   return gulp.src('public/less/style.less')
-  	//.pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(less({
       plugins: [autoprefix]
     }).on('error', function(err) {
@@ -121,7 +121,11 @@ gulp.task('exportDPE', function() {
 });
 
 gulp.task('exportHTML', function() {
-  var images, scripts, styles;
+  var src, href, url;
+  //src = /src=([\'\"])(?!\/\/)(\.*\/?)(.[^\'\"]*)\1/g;
+  src = /src=([\'\"])(?!\/\/)(?!\.*\/?__core)(\.*\/?)(.[^\'\"]*)\1/g;
+  href = /href=([\'\"])(?!\/\/)(?!\.*\/?__core)(\.*\/?)(.[^\'\"]*)\1/g;
+  url = /url\(([\'\"]?)(?!\/\/)(?!\.*\/?__core)(\.*\/?)(.[^\)]*)\1/g;
   
   nunjucksRender.nunjucks.configure(['views/'], {
     watch: false
@@ -133,6 +137,9 @@ gulp.task('exportHTML', function() {
       isExport: true,
       ctx: siteDB
     }))
+    .pipe(replace(src, 'src=$1$3$1'))
+    .pipe(replace(href, 'href=$1$3$1'))
+    .pipe(replace(url, 'url($1$3$1'))
     .pipe(prettify({
       indent_char: ' ',
       indent_size: 2
@@ -141,10 +148,10 @@ gulp.task('exportHTML', function() {
 });
 
 
-gulp.task('copyStatic', ['less:prod', 'compress'], function() {
+gulp.task('copyStatic', ['compress'], function() {
   gulp.src(['public/**/*', 'public/*'])
     .pipe(gulp.dest('export'));
 });
 
-gulp.task('publish', ['exportHTML', 'compress', 'less:prod', 'copyStatic']);
+gulp.task('publish', ['exportHTML', 'compress', 'copyStatic']);
 gulp.task('publishDPE', ['exportDPE', 'compress', 'less:prod']);
