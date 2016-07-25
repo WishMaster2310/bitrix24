@@ -169,6 +169,19 @@
     border: 0;
 }
 
+@media (max-width: 680px) {
+    .b-feedGallery__item-col {
+        display: block;
+        width: 100%;
+        
+    }
+
+
+    .b-feedGallery__item-inner {
+        display: block;
+    }
+}
+
 .b-person__name {
     font-size: 1.333em;
     font-weight: bold;
