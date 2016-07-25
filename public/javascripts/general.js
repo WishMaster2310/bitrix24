@@ -4,13 +4,13 @@ function initYaMap () {
 	{
 	    mmap= new ymaps.Map('yamap',
 	    {
-	        center: [56.8298,60.6158],
+	        center: [56.845132,60.589762],
 	        controls: ['zoomControl', 'fullscreenControl'],
 	        zoom: 16
 	    });
 
-	    myPlacemark = new ymaps.Placemark([56.8298,60.6158], {
-            hintContent: 'г. Екатеринбург ул Белинского д 56'
+	    myPlacemark = new ymaps.Placemark([56.845132,60.589762], {
+            hintContent: 'г. Екатеринбург ул Бориса Ельцина 3, 3 этаж. БЦ Ельцин Центр.'
         }, {
         	preset: 'islands#redIcon'
         });
@@ -23,10 +23,10 @@ function initYaMap () {
 }
 
 $(function() {
-	$('.js-nav a').on('click', function(e) {
+	$('.js-nav a').not('#nav-tel a').on('click', function(e) {
 		e.preventDefault();
 		var tar = $( $(this).attr("href") )
-		var offset = tar.offset().top;
+		var offset = tar.offset().top -90;
 		$('html, body').animate({
 			scrollTop: offset
 		}, 450)
@@ -58,5 +58,17 @@ $(function() {
 		var back = $($(this).find('.form-back'));
 		form.show();
 		back.hide();
-	})
+	});
+
+	$('.b-feedGallery').owlCarousel({
+		items: 1,
+		singleItem: true,
+		margin: 20,
+		dotsEach: true,
+		loop: true,
+		autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: false,
+    autoplayHoverPause: true
+	});
 });
