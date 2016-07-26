@@ -66,9 +66,8 @@ $(function() {
 		margin: 20,
 		dotsEach: true,
 		loop: true,
-		autoplay: true,
-    autoplayTimeout: 5000,
+		autoPlay: 3500,
     responsive: false,
-    autoplayHoverPause: true
+    stopOnHover: true
 	});
 });
