@@ -391,3 +391,59 @@
 #priceTable .pr-btn--external:hover {
     background-color: #b12960;
 }
+
+.navbar-tel {
+    display: table-cell;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 230px;
+    text-align: right;
+}
+
+.navbar-tel--lg {
+    display: none;
+}
+
+.navbar-tel--sm {
+    display: none;
+    
+    
+}
+.navbar-tel  a {
+    color: #106298;
+}
+
+.navbar-tel  a .dk-blue{
+    color: #3aa1c6
+}
+
+.navbar-header .container {
+    position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-tel--lg {
+        display: table-cell;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-tel--sm {
+        position: absolute;
+        top: 3px;
+        left: 190px;
+        display: block;
+        
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar-tel--sm {
+        position: static;
+        margin-top: 20px;
+        
+    }
+}
